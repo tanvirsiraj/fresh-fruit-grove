@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshFruitGrove</title>
+    <!-- daisyui  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind script  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- tailwind config  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primaryColor: "#F85559",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container mx-auto lg:px-40">
+      <div
+        class="navbar lg:bg-[#F85559] flex justify-betwee bg-[primaryColor] lg:my-12 border-spacing-y-60 lg:rounded-full lg:px-10 lg:py-6"
+      >
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="lg:text-white text-lg">Home</a></li>
+            <li><a class="lg:text-white text-lg">About Us</a></li>
+            <li><a class="lg:text-white text-lg">Shop</a></li>
+            <li><a class="lg:text-white text-lg">All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="navbar-center me-24">
+          <img src="./images/logo.png" alt="" />
+          <a
+            class="btn btn-ghost normal-case lg:text-4xl text-black lg:text-white"
+            >Fruit Burst</a
+          >
+        </div>
+        <div class="navbar-end hidden lg:inline-block w-[400px]">
+          <div
+            class="bg-white rounded-full flex justify-between items-center py-3 px-4"
+          >
+            <span class="inline-block">Search here</span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="dropdown ms-auto">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block w-5 h-5 stroke-current"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0"
+          >
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
